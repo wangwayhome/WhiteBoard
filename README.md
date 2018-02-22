@@ -20,10 +20,11 @@ It's a drop-in class that will work as soon as it's placed in a view with the fo
 
 * pathColor
 
-##Add image and textfield To withboard 
+Add image and textfield To withboard 
+===========
 by wayhome
 
-####control with Two fingers
+control with Two fingers
 
 * Zoom in and out
 

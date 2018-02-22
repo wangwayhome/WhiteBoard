@@ -17,6 +17,8 @@
 		5A0EB3A518C7F72F0017A159 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0EB3A418C7F72F0017A159 /* CoreGraphics.framework */; };
 		5A0EB3A718C7F72F0017A159 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0EB3A618C7F72F0017A159 /* UIKit.framework */; };
 		5A0EB3BB18C7F72F0017A159 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EB3BA18C7F72F0017A159 /* Images.xcassets */; };
+		E1A38E30203E53770055BE7C /* CustomFlowTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A38E2F203E53770055BE7C /* CustomFlowTextField.m */; };
+		E1A38E32203E9ABA0055BE7C /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1A38E31203E9ABA0055BE7C /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		5A0EB3A618C7F72F0017A159 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5A0EB3BA18C7F72F0017A159 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A0EB3C118C7F72F0017A159 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E1A38E2E203E53770055BE7C /* CustomFlowTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomFlowTextField.h; sourceTree = "<group>"; };
+		E1A38E2F203E53770055BE7C /* CustomFlowTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomFlowTextField.m; sourceTree = "<group>"; };
+		E1A38E31203E9ABA0055BE7C /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,8 @@
 			children = (
 				27DB8B9618DD3BF900DCAE39 /* DrawingView.h */,
 				27DB8B9718DD3BF900DCAE39 /* DrawingView.m */,
+				E1A38E2E203E53770055BE7C /* CustomFlowTextField.h */,
+				E1A38E2F203E53770055BE7C /* CustomFlowTextField.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 				5A0EB3A818C7F72F0017A159 /* WhiteBoard */,
 				5A0EB3A118C7F72F0017A159 /* Frameworks */,
 				5A0EB3A018C7F72F0017A159 /* Products */,
+				E1A38E31203E9ABA0055BE7C /* logo.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,6 +188,12 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "App Lab";
+				TargetAttributes = {
+					5A0EB39E18C7F72F0017A159 = {
+						DevelopmentTeam = 3W2YAKS4U4;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 5A0EB39A18C7F72F0017A159 /* Build configuration list for PBXProject "WhiteBoard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0EB3BB18C7F72F0017A159 /* Images.xcassets in Resources */,
+				E1A38E32203E9ABA0055BE7C /* logo.jpg in Resources */,
 				27DB8B9A18DD3BF900DCAE39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +235,7 @@
 				27DB8B9C18DD3BF900DCAE39 /* main.m in Sources */,
 				27DB8B9E18DD3BF900DCAE39 /* ViewController.m in Sources */,
 				27DB8B9F18DD3BF900DCAE39 /* DrawingView.m in Sources */,
+				E1A38E30203E53770055BE7C /* CustomFlowTextField.m in Sources */,
 				27DB8B9818DD3BF900DCAE39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,10 +337,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3W2YAKS4U4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhiteBoard/Supporting Files/WhiteBoard-Prefix.pch";
 				INFOPLIST_FILE = "WhiteBoard/Supporting Files/WhiteBoard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d98f1871-e637-4a15-9d3f-d4203268be10";
+				PROVISIONING_PROFILE_SPECIFIER = prf_dbg_all;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -334,10 +354,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3W2YAKS4U4;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WhiteBoard/Supporting Files/WhiteBoard-Prefix.pch";
 				INFOPLIST_FILE = "WhiteBoard/Supporting Files/WhiteBoard-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d98f1871-e637-4a15-9d3f-d4203268be10";
+				PROVISIONING_PROFILE_SPECIFIER = prf_dbg_all;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

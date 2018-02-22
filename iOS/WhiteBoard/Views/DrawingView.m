@@ -86,7 +86,7 @@
     } completion:^(BOOL finished) {
         // After the view has completed its animation,
         // Remove all paths from the _paths array, then refresh the view.
-        [_paths removeAllObjects];
+        [_paths removeObjectAtIndex:0];
         [self setNeedsDisplay];
         // The last step is to make the view visible again!
         [self setAlpha:1];
